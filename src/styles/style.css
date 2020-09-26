@@ -1,9 +1,10 @@
 .border-edit {
-    border: 2px solid rgb(180, 180, 180);
+    border-top: 2px solid #94a4a2;
+    border-bottom: 2px solid #94a4a2
 }
 
 .border-edit-2 {
-    border-bottom: 2px solid rgb(180, 180, 180);
+    border-bottom: 2px solid #94a4a2 ;
 }
 
 .button-edit {
@@ -12,4 +13,31 @@
     border: solid  #c05c5c;
     color: white;
     font-size: 15px;
+}
+
+.top-frame-edit {
+    background-color: silver;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border: 1px solid silver;
+}
+
+.img-text-edit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:  #4b5251;
+    font-size: 26px;
+    font-weight: 450;
+}
+
+.navbar-edit {
+    overflow: hidden !important;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }

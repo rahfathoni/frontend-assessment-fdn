@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/style.css'
 
 import NavigationBar from '../components/NavigationBar';
 import MenuBar from '../components/MenuBar';
@@ -18,20 +19,32 @@ import BottomFrame from '../components/BottomFrame';
 const HomePage = () => {
     return (
         <div>
-            <NavigationBar/>
-            <MenuBar />
-            <TopFrame />
-            <Billboard />
-            <EditorChoice />
-            <HomeJumbotrone />
-            <InternalCampaign />
-            <LatestArticles />
-            <LatestReviews />
-            <PopularGroup />
-            <LatestVideos />
-            <TopBrands />
-            <Footer />
-            <BottomFrame />
+            <div className="navbar-edit">
+                <NavigationBar/>
+                <MenuBar />
+            </div>
+            <div style={{marginTop: "110px"}}>
+                <div className="m-2">
+                    <TopFrame />
+                </div>
+                <div className="m-4">
+                    <Billboard />
+                </div>
+                <EditorChoice />
+                <HomeJumbotrone />
+                <div className="m-5">
+                    <InternalCampaign />
+                </div>
+                <LatestArticles />
+                <LatestReviews />
+                <PopularGroup />
+                <LatestVideos />
+                <TopBrands />
+                <Footer />
+                <div className="mt-4 mb-1">
+                    <BottomFrame />
+                </div>
+            </div>
         </div>
     );
 }
