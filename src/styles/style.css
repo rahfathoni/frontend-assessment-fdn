@@ -1,0 +1,15 @@
+.border-edit {
+    border: 2px solid rgb(180, 180, 180);
+}
+
+.border-edit-2 {
+    border-bottom: 2px solid rgb(180, 180, 180);
+}
+
+.button-edit {
+    background-color:  #c05c5c;
+    margin: 0;
+    border: solid  #c05c5c;
+    color: white;
+    font-size: 15px;
+}

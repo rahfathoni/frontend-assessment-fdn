@@ -1,3 +1,9 @@
+# frontend-assessment-fdn
+Frontend Assessment from Female Daily Network
+Rahmat Fathoni
+
+---------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
