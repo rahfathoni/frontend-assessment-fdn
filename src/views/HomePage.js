@@ -30,9 +30,13 @@ const HomePage = () => {
                 <div className="m-4">
                     <Billboard />
                 </div>
-                <EditorChoice />
-                <HomeJumbotrone />
-                <div className="m-5">
+                <div className="mt-1 mb-4">
+                    <EditorChoice />
+                </div>
+                <div className="mt-5">
+                    <HomeJumbotrone />
+                </div>
+                <div className="mt-3">
                     <InternalCampaign />
                 </div>
                 <LatestArticles />

@@ -34,6 +34,13 @@
     font-weight: 450;
 }
 
+.img-pic-edit {
+    border: 1px solid #94a4a2;
+    margin-bottom: -20px !important;
+    border-radius: 50%;
+    z-index: 700;
+}
+
 .navbar-edit {
     overflow: hidden !important;
     position: fixed !important;

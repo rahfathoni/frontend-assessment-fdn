@@ -1,11 +1,13 @@
 import {
-    FETCH_MAIN_DATA
+    FETCH_MAIN_DATA,
+    FETCH_MAINDATA_LOADING
 } from '../actions/index';
 
 const initialState = {
     editorChoice: [],
     latestArticle: [],
-    latestReview: []
+    latestReview: [],
+    loadingState: 'stop' 
 }
 
 const mainReducer = (state = initialState, { type, payload }) => {
@@ -16,6 +18,11 @@ const mainReducer = (state = initialState, { type, payload }) => {
                 editorChoice: payload["editor's choice"],
                 latestArticle: payload["latest articles"],
                 latestReview: payload["latest review"]
+            }
+        case FETCH_MAINDATA_LOADING:
+            return {
+                ...state,
+                loadingState: payload
             }
         default:
             return state
