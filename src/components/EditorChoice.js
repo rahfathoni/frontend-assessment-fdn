@@ -7,8 +7,6 @@ import '../styles/style.css'
 
 const EditorChoice = () => {
     const editorChoice = useSelector((state) => state.mainReducer.editorChoice)
-    const latestArticle = useSelector((state) => state.mainReducer.latestArticle)
-    const latestReview = useSelector((state) => state.mainReducer.latestReview)
     const loadingState = useSelector((state) => state.mainReducer.loadingState)
 
     function ratingStar(rating){
@@ -44,19 +42,19 @@ const EditorChoice = () => {
                     {editorChoice.map((editor, i) => {
                         return <Col key={i} className='mt-1'>
                                     <Media>
-                                        <Image src={defaultPic} className="img-pic-edit ml-1 mr-2" height={80}/>
+                                        <Image src={defaultPic} className="img-pic-edit ml-1 mr-2" height={70} width={70}/>
                                         <Media.Body>
                                             <div style={{fontWeight: '700'}}>{editor.editor}</div>
                                             <div style={{fontSize: '15px'}}
                                             className="text-muted">{editor.role}</div>
                                         </Media.Body>
                                     </Media>
-                                    <Card bg='white' text='dark' style={{border: " 1px solid #94a4a2"}}>
+                                    <Card bg='white' text='dark' style={{border: " 1px solid #dce4e3"}}>
                                         <Card.Img style={{height: '200px', width: 'auto' }} 
-                                        variant="top" src={editor.product.image} />
-                                            <Card.Body>
+                                        variant="top" src={editor.product.image} className='mt-2' />
+                                            <Card.Body className="pr-1 pl-1">
                                                 <Card.Text className="mb-1">
-                                                    <span className="mr-1"><strong>{editor.product.rating}</strong></span>{ratingStar(editor.product.rating)}
+                                                    <span className="mr-1"><strong>{editor.product.rating}</strong></span>{ratingStar(editor.product.rating)} &nbsp;&nbsp;(7)
                                                 </Card.Text>
                                                 <Card.Text className="mb-0"><strong>{editor.product.name}</strong></Card.Text>
                                                 <Card.Text className="mt-0">{editor.product.description}</Card.Text>
