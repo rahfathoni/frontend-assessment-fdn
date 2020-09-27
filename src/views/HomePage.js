@@ -41,7 +41,7 @@ const HomePage = () => {
                 <LatestVideos />
                 <TopBrands />
                 <Footer />
-                <div className="mt-4 mb-1">
+                <div className="mt-4">
                     <BottomFrame />
                 </div>
             </div>
