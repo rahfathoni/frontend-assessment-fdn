@@ -52,13 +52,17 @@ const EditorChoice = () => {
                                     </Media.Body>
                                 </Media>
                                 <Card bg='white' text='dark' style={{border: " 1px solid #dce4e3", borderRadius: '4%'}}>
-                                    <Link to="#">
-                                        <Card.Img style={{height: '200px', width: 'auto' }}
-                                        variant="top" src={editor.product.image} className='mt-2' />
-                                    </Link>
+                                    <Col xs={1}></Col>
+                                    <Col>
+                                        <Link to="#">
+                                            <Card.Img style={{height: '200px', width: 'auto' }}
+                                            variant="top" src={editor.product.image} className='mt-2' />
+                                        </Link>
+                                    </Col>
+                                    <Col xs="s"></Col>
                                         <Card.Body className="pr-1 pl-1">
                                             <Card.Text className="mb-1">
-                                                <span className="mr-1"><strong>{editor.product.rating}</strong></span>{ratingStar(editor.product.rating)} &nbsp;&nbsp;(7)
+                                                <span className="mr-1"><strong>{editor.product.rating}</strong></span>{ratingStar(editor.product.rating)} &nbsp;&nbsp;({editorChoice.length})
                                             </Card.Text>
                                             <Link to="#">
                                                 <Card.Text style={{fontWeight: "bolder", color: "black"}} className="mb-0">{editor.product.name}</Card.Text>

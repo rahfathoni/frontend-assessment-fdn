@@ -55,7 +55,7 @@ const HomePage = () => {
                         </Col>
                     </Row>
                 </Container>
-                <div className="pt-5 pb-5">
+                <div className="pt-5">
                     <PopularGroup />
                 </div>
                 <div className="pb-4">
@@ -64,7 +64,7 @@ const HomePage = () => {
                 <div className="pb-4">
                     <TrendingThisWeek />
                 </div>
-                <div className="pt-1 pb-4">
+                <div className="pt-1 pb-5">
                     <TopBrands />
                 </div>
                 <div className="mt-4 mb-3">

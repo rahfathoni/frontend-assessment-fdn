@@ -44,19 +44,23 @@ const HomeJumbotron = () => {
                     <Row>
                         {editorChoice.slice(0, 3).map((editor, i) => {
                             return <Col key={i} className='mt-1 pr-2 pl-2'>
-                                        <Card bg='white' text='dark' style={{border: " 1px solid white", borderRadius: '4%'}}>
-                                            <Link to="#" className="text-lg-center">
-                                                <Card.Img style={{height: '170px', width: 'auto' }} 
-                                                variant="top" src={editor.product.image} className='mt-2' />
-                                            </Link>
-                                                <Card.Body className="pr-1 pl-1">
+                                        <Card bg='white' text='dark' style={{border: "1px solid white", borderRadius: '4%'}}>
+                                            <Col xs={1}></Col>
+                                            <Col>
+                                                <Link to="#">
+                                                    <Card.Img style={{height: '170px', width: 'auto' }} 
+                                                    variant="top" src={editor.product.image} className='mt-2' />
+                                                </Link>
+                                            </Col>
+                                            <Col xs={1}></Col>
+                                                <Card.Body className="pr-1 pl-2">
                                                     <Link to="#">
                                                         <Card.Text className='mb-1' style={{color: '#be1854', fontWeight: 'bold'}}>
                                                             Match Skin Type
                                                         </Card.Text>
                                                     </Link>
                                                     <Card.Text className="mb-2">
-                                                        <span className="mr-1"><strong>{editor.product.rating}</strong></span>{ratingStar(editor.product.rating)} &nbsp;&nbsp;(7)
+                                                        <span className="mr-1"><strong>{editor.product.rating}</strong></span>{ratingStar(editor.product.rating)} &nbsp;&nbsp;({editorChoice.length})
                                                     </Card.Text>
                                                     <Link to="#">
                                                         <Card.Text style={{fontWeight: "bolder", color: "black"}} className="mb-0">{editor.product.name}</Card.Text>

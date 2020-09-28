@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
-import { Container, Row, Col} from 'react-bootstrap'
+import { Container, Row, Col, Image} from 'react-bootstrap'
 import { ChevronRight } from 'react-bootstrap-icons'
 import '../styles/style.css'
 
+import Nivea from '../assets/nivea-crop.jpg'
+import TheOrdinary from '../assets/theordinary.png'
+import TheBodyShop from '../assets/thebodyshop-crop.jpg'
+import SkII from '../assets/sk-ii-crop.jpg'
+import Maybelline from '../assets/maybeline.jpeg'
+import InnisFree from '../assets/innisfree-crop.jpg'
+
 const TopBrands = () => {
+    const [brands] = useState(
+        [{logo: Nivea}, 
+        {logo: TheOrdinary},
+        {logo: TheBodyShop},
+        {logo: SkII},
+        {logo: Maybelline},
+        {logo: InnisFree}])
+
     return (
         <Container>
             <Row className="mb-3">
@@ -20,10 +35,12 @@ const TopBrands = () => {
                     </Row>
                 </Col>
             </Row>
-            <Row>
-                <Col>
-                    <h1>Brand logo</h1>
-                </Col>
+            <Row className="pt-4">
+                {brands.map((brand, i) => {
+                    return <Col className="pt-4 pb-0" key={i} style={{margin: '0px', textAlign: 'center'}}>
+                            <Image src={brand.logo} style={{maxWidth: '70%', maxHeight: '70%', transform: 'translate( 0, -50%)'}} />
+                        </Col>
+                })}
             </Row>
             <Row>
                 <Col>

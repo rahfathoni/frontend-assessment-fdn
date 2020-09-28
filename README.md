@@ -2,7 +2,14 @@
 
 Frontend Assessment from Female Daily Network
 
-Created by Rahmat Fathoni
+Created by **Rahmat Fathoni**
+
+## How to preview this project
+1. From your terminal, clone this repository with "git clone repository-link "
+2. Go to repository folder.
+3. Open terminal from repository folder
+4. from your terminal, "npm init"
+5. To perview this project, from your terminal, "npm start"
 
 ---------------------
 

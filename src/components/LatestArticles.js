@@ -13,7 +13,7 @@ const LatestArticles = () => {
         if(loadingState === 'stop'){
             return (
                latestArticles.map((article, i) => {
-                   return <Col key={i} md={4}>
+                   return <Col key={i} sm={4}>
                             <Card style={{border: 'none'}} className="pt-2 pb-2">
                                 <Link to="#">
                                     <Card.Img variant="top" src={article.image} style={{borderRadius: '15px', width: 'auto', height: '180px'}}/>
