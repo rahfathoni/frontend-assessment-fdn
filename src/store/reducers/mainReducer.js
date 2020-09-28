@@ -5,7 +5,7 @@ import {
 
 const initialState = {
     editorChoice: [],
-    latestArticle: [],
+    latestArticles: [],
     latestReview: [],
     loadingState: 'stop' 
 }
@@ -16,7 +16,7 @@ const mainReducer = (state = initialState, { type, payload }) => {
             return {
                 ...state,
                 editorChoice: payload["editor's choice"],
-                latestArticle: payload["latest articles"],
+                latestArticles: payload["latest articles"],
                 latestReview: payload["latest review"]
             }
         case FETCH_MAINDATA_LOADING:

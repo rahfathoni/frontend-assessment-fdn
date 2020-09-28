@@ -8,16 +8,16 @@ import { fetchMainData } from './store/actions';
 function App() {
   const dispatch = useDispatch();
   const editorChoice = useSelector((state) => state.mainReducer.editorChoice)
-  const latestArticle = useSelector((state) => state.mainReducer.latestArticle)
+  const latestArticles = useSelector((state) => state.mainReducer.latestArticles)
   const latestReview = useSelector((state) => state.mainReducer.latestReview)
 
   useEffect(() => {
     // console.log(editorChoice)
-    if(editorChoice.length === 0 || latestArticle.length === 0 || latestReview.length === 0){
+    if(editorChoice.length === 0 || latestArticles.length === 0 || latestReview.length === 0){
       // console.log('11111111111111')
       dispatch(fetchMainData())
     }
-  }, [editorChoice, latestReview, latestArticle, dispatch]);
+  }, [editorChoice, latestReview, latestArticles, dispatch]);
 
   return (
     <BrowserRouter>

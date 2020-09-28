@@ -33,13 +33,15 @@ const HomePage = () => {
                 <div className="mt-1 mb-4">
                     <EditorChoice />
                 </div>
-                <div className="mt-5">
+                <div className="pt-3 pb-3">
                     <HomeJumbotrone />
                 </div>
-                <div className="mt-3">
+                <div className="pt-1 pb-3">
                     <InternalCampaign />
                 </div>
-                <LatestArticles />
+                <div className="pt-4 pb-3">
+                    <LatestArticles />
+                </div>
                 <LatestReviews />
                 <PopularGroup />
                 <LatestVideos />
