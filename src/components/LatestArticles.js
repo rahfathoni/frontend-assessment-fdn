@@ -23,13 +23,13 @@ const LatestArticles = () => {
                                         <Card.Title className='pb-3' style={{fontSize: '22px', fontWeight: 'bolder', color: 'black'}}>{article.title}</Card.Title>
                                     </Link>
                                     <Card.Subtitle className="text-muted">
-                                        <span style={{color: 'grey', fontWeight: 'bolder'}}>{article.author} </span> | &nbsp;
+                                        <span style={{color: 'grey', fontWeight: 'bolder'}}>{article.author} </span> | &nbsp; 
                                         <span style={{opacity: '0.5'}}>{article.published_at}</span>
                                     </Card.Subtitle>
                                 </Card.Body>
                             </Card>
                         </Col>
-               })
+               }).reverse()
             )
         } else if(loadingState === 'start') {
             return (

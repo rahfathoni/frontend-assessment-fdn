@@ -61,7 +61,7 @@ const HomePage = () => {
                 <div className="pb-4">
                     <LatestVideos />
                 </div>
-                <div className="pb-4">
+                <div className="pb-4 pt-1">
                     <TrendingThisWeek />
                 </div>
                 <div className="pt-1 pb-5">
