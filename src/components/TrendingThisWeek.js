@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Carousel } from 'react-bootstrap'
 import '../styles/style.css'
+import bgSilver from '../assets/silver-bg.png'
 
 const TrendingThisWeek = () => {
     return (
@@ -13,7 +14,29 @@ const TrendingThisWeek = () => {
             </Row>
             <Row>
                 <Col>
-                    <h1>Trending card</h1>
+                    <Carousel interval={null}>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100"
+                            src={bgSilver} height={280}
+                            alt="First slide"
+                            />
+                            <div className="img-text-edit">
+                                Center
+                            </div>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100"
+                            src={bgSilver} height={280}
+                            alt="Third slide"
+                            />
+                            <Carousel.Caption>
+                                <h3>Second slide label</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
                 </Col>
             </Row>
         </Container>

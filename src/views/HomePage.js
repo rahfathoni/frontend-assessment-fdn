@@ -64,7 +64,7 @@ const HomePage = () => {
                 <div className="pb-4 pt-1">
                     <TrendingThisWeek />
                 </div>
-                <div className="pt-1 pb-5">
+                <div className="pt-3 pb-5">
                     <TopBrands />
                 </div>
                 <div className="mt-4 mb-3">
